@@ -18,7 +18,7 @@
 
 # 效果
 1. 启动首页
-![首页](https://github.com/Javon9276/Contract/效果图/1.jpg)
+![首页](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/1.jpg)
 
 2. 使用PDF.js显示生成的PDF文件
 ![生成PDF合同](https://github.com/Javon9276/Contract/效果图/2.jpg)
