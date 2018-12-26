@@ -1,10 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    session.setAttribute("basePath", basePath);
+
+    String domainPath = request.getScheme() + "://" + request.getServerName() + path + "/";
+    session.setAttribute("domainPath", domainPath);
+%>
 <!-- HTML5文件 -->
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">--%>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
     <meta content="telephone=no,email=no" name="format-detection">
     <title>查看合同</title>
     <!-- ui框架引入css -->
@@ -89,9 +99,7 @@
 <div class="page article js_show">
     <div class="page__bd">
         <article class="weui-article">
-            <p id="imgs">
-                <img id="page1" src="" alt="">
-                <img id="page2" src="" alt="">
+            <p id="concractImages">
             </p>
         </article>
     </div>
@@ -135,6 +143,7 @@
 <!-- jquery引入 -->
 <script type="text/javascript" src="../js/jquery/jquery.js"></script>
 <script type="text/javascript" src="../js/jquery-weui.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 
     function getRequestParams() {
@@ -158,13 +167,30 @@
         $("title").html(fileName);
         var html = "";
         for (var i = 0; i < length; i++) {
-            html += '<img src="/pdf/' + fileName + '_' + (i + 1) + '.png" alt="">';
+            html = '<img id="targetObj' + i + '" src="/pdf/' + fileName + '_' + (i + 1) + '.png" alt="">';
+            $("#concractImages").append(html);
         }
-        $("#imgs").html(html);
+        $("#concractImages img").click(function () {
+            var imgArray = [];
+            var curImageSrc = $(this).attr('src');
+            curImageSrc = "${domainPath}" + curImageSrc;
+            var oParent = $(this).parent();
+            if (curImageSrc && !oParent.attr('href')) {
+                $('#concractImages img').each(function (index, el) {
+                    var itemSrc = $(this).attr('src');
+                    imgArray.push("${domainPath}" + itemSrc);
+                });
+                wx.previewImage({
+                    current: curImageSrc,
+                    urls: imgArray
+                });
+            }
+        });
         if (fileName.indexOf('（已签名）') < 0) {
             $('#signatureBtn').show();
         }
     });
+
 
     function initDrow() {
         var body = $('body');
@@ -252,6 +278,7 @@
             $('#signatureDialog').show();
         }, 6000);
     });
+
 </script>
 </html>
 
