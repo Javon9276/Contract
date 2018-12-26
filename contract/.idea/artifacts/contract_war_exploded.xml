@@ -1,0 +1,49 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="contract:war exploded">
+    <output-path>$PROJECT_DIR$/target/contract</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="contract" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.21.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.logback-extensions:logback-ext-spring:0.1.5" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.17" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.1" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.17" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.17" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
+          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
+          <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.04" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-scratchpad:3.17" />
+          <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.13" />
+          <element id="library" level="project" name="Maven: com.itextpdf:itext-asian:5.2.0" />
+          <element id="library" level="project" name="Maven: net.sf.jacob-project:jacob:1.14.3" />
+          <element id="library" level="project" name="Maven: org.apache.pdfbox:pdfbox:2.0.13" />
+          <element id="library" level="project" name="Maven: org.apache.pdfbox:fontbox:2.0.13" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/contract/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="contract/web/Web" />
+    </root>
+  </artifact>
+</component>

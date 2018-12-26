@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <properties>
+        <property name="SERVER_NAME">Javon</property>
+    </properties>
+
+    <property name="LOG_PATH" value="/log" />
+    <property name="SERVER_NAME" value="contract" />
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-5p [%c] - %m%n</pattern>
+        </encoder>
+        <charset>UTF-8</charset>
+    </appender>
+
+    <appender name="RollingFile" class="ch.qos.logback.core.FileAppender">
+        <file>${catalina.home}/logs/${SERVER_NAME}-dev.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${SERVER_NAME}-dev.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-5p [%c] - %m%n</pattern>
+        </encoder>
+        <charset>UTF-8</charset>
+    </appender>
+
+    <!-- show hibernate sql end -->
+    <root level="debug">
+        <appender-ref ref="Console" />
+        <appender-ref ref="RollingFile" />
+    </root>
+
+</configuration>
