@@ -18,31 +18,31 @@
 
 # 效果
 1. 启动首页
-![首页](https://github.com/Javon9276/Contract/效果图/1.jpg)
+![首页](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/1.jpg)
 
 2. 使用PDF.js显示生成的PDF文件
-![生成PDF合同](https://github.com/Javon9276/Contract/效果图/2.jpg)
+![生成PDF合同](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/2.jpg)
 
 3. PDF合同签名位置
-![PDF合同签名位置](https://github.com/Javon9276/Contract/效果图/3.jpg)
+![PDF合同签名位置](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/3.jpg)
 
 4. 合同签名按钮点后提示 
-![合同签名提示](https://github.com/Javon9276/Contract/效果图/4.jpg)
+![合同签名提示](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/4.jpg)
 
 5. 签名界面
-![合同签名](https://github.com/Javon9276/Contract/效果图/5.jpg)
+![合同签名](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/5.jpg)
 
 6. PDF合同签名结果通过PDF.js显示
-![PDF合同签名结果](https://github.com/Javon9276/Contract/效果图/6.jpg)
+![PDF合同签名结果](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/6.jpg)
 
 7. 生成PNG合同文件显示
-![生成PNG合同](https://github.com/Javon9276/Contract/效果图/7.jpg)
+![生成PNG合同](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/7.jpg)
 
 8. PNG合同签名位置
-![PNG合同签名位置](https://github.com/Javon9276/Contract/效果图/8.jpg)
+![PNG合同签名位置](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/8.jpg)
 
 9. PNG合同签名结果显示
-![PNG合同签名结果](https://github.com/Javon9276/Contract/效果图/9.jpg)
+![PNG合同签名结果](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/9.jpg)
 
 # 问题
 问题1: PDF.js 安卓手机异常闪退到桌面
