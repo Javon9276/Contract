@@ -53,12 +53,17 @@
 
 ![PNG合同签名结果](https://github.com/Javon9276/Contract/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/9.jpg)
 
-# 版本迭代
-1. 新增微信官方的图片预览方法，使得PNG合同展示更加清晰。
-
 # 问题
-问题1: PDF.js 安卓手机异常闪退到桌面
+问题: PDF.js 安卓手机异常闪退到桌面
 解决：生成PNG图片进行展示，现在还没有找到真正的问题所在，但是估计是因为浏览器内存不足导致闪退。
 
 问题：The document appears to be corrupted and cannot be loaded.
 解决：错误意思大概是Word文件损坏异常，但google和百度了一下，说是版本的BUG
+
+问题：PDF.js 显示电子发票时，无法显示签章
+解决：主要是没有显示签名的内容，把`build\pdf.worker.js`中的下面代码注释就可以正常访问了
+```
+if (data.fieldType === 'Sig') {
+    _this2.setFlags(_util.AnnotationFlag.HIDDEN);
+}
+```
